@@ -4,82 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="#c0c0c0"
     android:orientation="vertical"
-    android:background="#c0c0c0">
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Type and Run"
-        android:textSize="20sp"
         android:layout_margin="10dp"
-        android:textColor="#778899"/>
+        android:text="Type and Run"
+        android:textColor="#778899"
+        android:textSize="30sp" />
 
     <EditText
-        android:id="@+id/txtMake"
+        android:id="@+id/etMake"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
         android:layout_margin="10dp"
         android:hint="Make:"
-        />
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/txtYear"
+        android:id="@+id/etYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
         android:layout_margin="10dp"
         android:hint="Year:"
-        />
+        android:inputType="number"
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/txtColor"
+        android:id="@+id/etColor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
         android:layout_margin="10dp"
         android:hint="Color:"
-        />
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/txtPurchasePrice"
+        android:id="@+id/etPurchasePrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
         android:layout_margin="10dp"
         android:hint="Purchase price(£):"
-        />
+        android:inputType="number"
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/txtEngineSize"
+        android:id="@+id/etEngineSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
         android:layout_margin="10dp"
         android:hint="Engine size(litre):"
-        />
-        <Button
-            android:id="@+id/btnCreateCar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:text="Create Car"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"/>
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnCreateCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:drawableBottom="@color/colorAccent"
+        android:padding="20sp"
+        android:text="Create Car"
+        android:textSize="20sp" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/txtScrollable"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        style="@style/customStyle"
-        android:scrollbars="vertical"
-        android:text=""
-        />
+
+        <TextView
+            android:id="@+id/txtScrollable"
+            style="@style/customStyles"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:text="" />
+
     </ScrollView>
 </LinearLayout>
